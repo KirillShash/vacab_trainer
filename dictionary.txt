@@ -4,7 +4,7 @@ depend on - зависеть от
 cuisine - национальная кухня
 boring - скучный
 accept - принимать
-Defence - оборона (защита)
+Defence - оборона
 sentence - предложение
 reward - вознаграждение
 suitcase - чемодан
