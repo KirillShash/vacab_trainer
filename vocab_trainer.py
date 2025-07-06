@@ -21,26 +21,34 @@ class VocabTrainer:
         self.current_pair = None
         self.current_mode = None
 
-        self.label = tk.Label(master, text="Нажмите 'Следующее слово'")
-        self.label.pack(pady=10)
+        # Устанавливаем размер окна в 2 раза больше стандартного
+        master.geometry("800x600")  # Увеличиваем с примерно 400x300 до 800x600
+        
+        # Создаем шрифты большего размера
+        large_font = ("Arial", 16)
+        medium_font = ("Arial", 14)
+        button_font = ("Arial", 12)
 
-        self.entry = tk.Entry(master, width=40)
-        self.entry.pack(pady=5)
+        self.label = tk.Label(master, text="Нажмите 'Следующее слово'", font=large_font)
+        self.label.pack(pady=20)
+
+        self.entry = tk.Entry(master, width=50, font=large_font)  # Увеличиваем ширину поля ввода
+        self.entry.pack(pady=10)
         self.entry.bind("<Return>", self.check_answer)
 
-        self.result_label = tk.Label(master, text="")
-        self.result_label.pack(pady=5)
+        self.result_label = tk.Label(master, text="", font=large_font)
+        self.result_label.pack(pady=10)
 
-        self.next_button = tk.Button(master, text="Следующее слово", command=self.next_word)
-        self.next_button.pack(pady=5)
+        self.next_button = tk.Button(master, text="Следующее слово", command=self.next_word, font=button_font, width=20, height=2)
+        self.next_button.pack(pady=10)
 
-        self.check_button = tk.Button(master, text="Проверить", command=self.check_answer)
-        self.check_button.pack(pady=5)
+        self.check_button = tk.Button(master, text="Проверить", command=self.check_answer, font=button_font, width=15, height=2)
+        self.check_button.pack(pady=10)
 
         self.mode_frame = tk.Frame(master)
-        self.mode_frame.pack(pady=5)
-        tk.Radiobutton(self.mode_frame, text="Английский → Русский", variable=self.mode, value="eng_to_rus").pack(side=tk.LEFT)
-        tk.Radiobutton(self.mode_frame, text="Русский → Английский", variable=self.mode, value="rus_to_eng").pack(side=tk.LEFT)
+        self.mode_frame.pack(pady=10)
+        tk.Radiobutton(self.mode_frame, text="Английский → Русский", variable=self.mode, value="eng_to_rus", font=medium_font).pack(side=tk.LEFT, padx=10)
+        tk.Radiobutton(self.mode_frame, text="Русский → Английский", variable=self.mode, value="rus_to_eng", font=medium_font).pack(side=tk.LEFT, padx=10)
 
         self.reset_progress()
         self.next_word()
@@ -73,9 +81,9 @@ class VocabTrainer:
         self.current_pair = random.choice(available)
         self.current_mode = self.mode.get()
         if self.current_mode == "eng_to_rus":
-            self.label.config(text=f"Переведите: {self.current_pair[0]}")
+            self.label.config(text=f"Переведите: {self.current_pair[0]}", font=("Arial", 16))
         else:
-            self.label.config(text=f"Переведите: {self.current_pair[1]}")
+            self.label.config(text=f"Переведите: {self.current_pair[1]}", font=("Arial", 16))
 
     def check_answer(self, event=None):
         user_input = self.entry.get().strip().lower()
@@ -85,11 +93,11 @@ class VocabTrainer:
         else:
             correct = eng.strip().lower()
         if user_input == correct:
-            self.result_label.config(text="Верно!", fg="green")
+            self.result_label.config(text="Верно!", fg="green", font=("Arial", 16))
             self.progress[(eng, rus, self.current_mode)] += 1
             self.master.after(800, self.next_word)
         else:
-            self.result_label.config(text=f"Неверно! Правильно: {correct}", fg="red")
+            self.result_label.config(text=f"Неверно! Правильно: {correct}", fg="red", font=("Arial", 16))
 
 if __name__ == "__main__":
     dictionary = load_dictionary("dictionary.txt")
