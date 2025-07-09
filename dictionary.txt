@@ -20,3 +20,5 @@ flat - квартира
 release - выпускать
 lose track of time - не следить за временем
 go out - выходить в свет
+get used to - адаптироваться
+used to - привыкать
