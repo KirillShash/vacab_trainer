@@ -23,8 +23,8 @@ go out - выходить в свет
 get used to - адаптироваться
 used to - иметь привычку в прошлом
 exhausted - изнеможденный
-at first - сначала
-arrangment - договоренность
+at first - сначала (типа для начала/ во-первых)
+arrangement- договоренность
 glad - рад, доволен
 rote learning - зубрежка
 learn by heart - выучить наизусть
@@ -33,9 +33,118 @@ mistake - ошибка
 comma - запятая
 attic - чердак
 quarter - четверть
-nephew - племянник 
-niece - племянница
+nephew - племянник
+niece - племянница (нис)
 aunt - тетя
 possession - владение
 coat - пальто
 thirsty - испытывать жажду
+salmon - лосось
+got out of a habit - выйти из привычки - отвыкнуть
+from scratch - с нуля
+personality traits - черты характера
+determinated - целеустремленный
+to have a sweet tooth - быть сладкоежкой
+hardly ever - едва ли когда-либо (очень редко)
+comparing to - сравнивая с
+heavy cream - сливки
+ham - ветчина
+porridge - каша
+oatmeal - овсянка
+buckwheat - гречка
+mashed potatoes - пюре
+turkey - индейка 
+pork - свинина 
+beef - говядина
+main course - главное блюдо
+service charge - сервисный сбор
+side dishe - гарнир
+starters - закуски
+waiter - официант
+waitress - официантка
+tips - чаевые
+garlic - чеснок
+dip - макать
+french fries - картофель фри
+crisps - чипсы
+roast - запекать
+daily routine - ежедневная рутина
+sour cream - сметана 
+cottage cheese - творог
+iron board - доска для глажки
+towel - полотенце
+cupboard - шкаф
+invention - изобретение
+habit - привычка
+shift - смена
+around the clock - 24/7
+employee - сотрудник
+drawers - ящики
+chest of drawers - комод
+counter - столешница
+sink - раковина на кухне
+cooker - плита
+stove -конфорка
+wardrobe - шкаф для одежды
+stool - табуретка
+shelf - полка
+desk - рабочий стол
+washbasin -раковина в ванной
+couple - пара
+live up to expectations - оправдать ожидания
+thorough - тщательный,
+tidy - опрятный, убранный
+clutter - беспорядок
+treat - лечить
+become - становиться
+pleasant - приятный
+belong to - принадлежать к
+spacious - просторный
+ground floor - первый этаж
+recall - вспомнить
+block of flats - многоквартирное здание
+preference - предпочтение
+embankment - набережная
+pour - лить
+crowded  - многолюдный
+mixed feelings - смешанные чувства
+convenient - удобный (не физически)
+faulty - с ошибками
+save up - копить
+primer - грунтовка
+annoyed - раздраженный
+varnish - лак
+approximately - примерно
+approx.
+unfortunately - к сожалению
+at the same time - одновременно
+get cold -  замерзнуть
+tire - утомлять
+headache - головная боль
+end up - прийти к чему-то (закончиться на чем-то)
+It takes 10 minutes = это занимает
+at all - вообще, совсем
+attitude - отношение ( к чему-то)
+pharmacy - аптека
+suit - подходить по стилю
+fit - подходить по размеру
+altogether - всё вместе
+trousers - брюки, штаны
+try on - примерить
+forecast - предсказывать, прогноз погоды
+moreover - более того
+traffic jam - пробка (на дороге)
+scrupulous - скрупулезная
+detailed work- с большим количеством деталей
+fall - осень
+hat - шапка 
+scarf - шарф
+in a week - через неделю
+sore throat  - больное горло
+from another angle - с другой точки зрения
+feel relief - чувствовать облегчение
+fall asleep - заснуть
+across - через (дорогу)
+stay up late - не ложиться спать, долго бодрствовать
+count in - засчитать
+labour market - рынок труда
