@@ -58,7 +58,7 @@ pork - свинина
 beef - говядина
 main course - главное блюдо
 service charge - сервисный сбор
-side dishe - гарнир
+side dish - гарнир
 starters - закуски
 waiter - официант
 waitress - официантка

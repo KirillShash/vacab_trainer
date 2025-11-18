@@ -11,9 +11,15 @@ def load_dictionary(filename):
         raise FileNotFoundError(f"Не найден файл словаря: {filename}")
     with path.open(encoding="utf-8") as f:
         for line in f:
-            if "-" in line:
-                eng, rus = line.strip().split(" - ", 1)
-                dictionary.append((eng.strip(), rus.strip()))
+            line = line.strip()
+            if " - " in line:
+                parts = line.split(" - ", 1)
+                if len(parts) == 2:
+                    eng, rus = parts
+                    eng = eng.strip()
+                    rus = rus.strip()
+                    if eng and rus:
+                        dictionary.append((eng, rus))
     return dictionary
 
 
