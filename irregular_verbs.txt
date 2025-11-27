@@ -32,3 +32,4 @@ sweep,swept,swept
 swim,swam,swum
 understand,understood,understood
 win,won,won
+mistake,mistook,mistaken
