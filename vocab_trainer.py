@@ -323,22 +323,18 @@ class VocabTrainer:
 
     def skip_current(self):
         if self.training_mode == "dictionary" and self.current_pair:
-            correct = self.current_pair[1] if self.current_mode == "eng_to_rus" else self.current_pair[0]
-            self.result_label.config(text=f"Правильно: {correct}", fg="blue")
-            self.last_skipped = {
-                "mode": "dictionary",
-                "data": self.current_pair,
-                "direction": self.current_mode,
-            }
-            self.master.after(1000, self.next_word)
+            eng, rus = self.current_pair
+            correct = rus if self.current_mode == "eng_to_rus" else eng
+            self.result_label.config(text=f"Пропущено. Засчитано как верно: {correct}", fg="green")
+            # Увеличиваем счетчик прогресса, как при правильном ответе
+            self.progress[(eng, rus, self.current_mode)] += 1
+            self.master.after(800, self.next_word)
         elif self.training_mode == "irregular" and self.current_verb:
             correct_text = f"{self.current_verb[0]} - {self.current_verb[1]} - {self.current_verb[2]}"
-            self.result_label.config(text=f"Правильно: {correct_text}", fg="blue")
-            self.last_skipped = {
-                "mode": "irregular",
-                "data": self.current_verb,
-            }
-            self.master.after(1000, self.next_word)
+            self.result_label.config(text=f"Пропущено. Засчитано как верно: {correct_text}", fg="green")
+            # Увеличиваем счетчик прогресса, как при правильном ответе
+            self.progress[self.current_verb] += 1
+            self.master.after(800, self.next_word)
 
 
 if __name__ == "__main__":
